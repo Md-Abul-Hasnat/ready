@@ -1,0 +1,57 @@
+.services {
+  width: 85%;
+  margin: 100px auto 0;
+  text-align: center;
+}
+
+.services h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.services p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  padding-bottom: 25px;
+  text-align: center;
+  color: gray;
+}
+
+.services .services-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 1240px) {
+  .services h1 {
+    font-size: 2.5rem;
+  }
+  .services p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .services .services-main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .services h1 {
+    font-size: 2rem;
+  }
+  .services p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .services .services-main {
+    grid-template-columns: 1fr;
+  }
+  .services h1 {
+    font-size: 1.5rem;
+  }
+}

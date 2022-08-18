@@ -1,0 +1,86 @@
+.client {
+  margin-top: 130px;
+  width: 100%;
+  height: 90vh;
+  color: white;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../img/background4.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+}
+.client h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.client .client-main {
+  width: 85%;
+  height: 78%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  place-items: center;
+}
+.client-main img {
+  transition: 0.5s;
+}
+
+.client-main img:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 1000px) {
+  .client .client-main {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .client .client-main {
+    width: 85%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 20px;
+  }
+
+  .client p {
+    margin-bottom: 30px;
+  }
+
+  .client {
+    width: 100%;
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .client .client-main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .client {
+    padding: 50px 0;
+  }
+  .client h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .client .client-main {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 10px;
+  }
+
+  .client h1 {
+    font-size: 1.7rem;
+  }
+  .client p {
+    font-size: 0.9rem;
+  }
+  .client-main img {
+    width: 90px;
+  }
+}

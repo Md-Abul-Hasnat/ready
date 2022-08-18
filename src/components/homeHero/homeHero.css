@@ -1,0 +1,106 @@
+.home {
+  width: 100%;
+  height: 110vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0)
+    ),
+    url("../../img/hero-bg3.webp");
+  background-position: right;
+  background-size: cover;
+}
+
+.home .home-hero {
+  height: 85%;
+  width: 85%;
+  padding-right: 90px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  color: white;
+  padding-bottom: 150px;
+}
+
+.home-hero h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.home-hero h1 span {
+  color: var(--btn-color);
+}
+
+.home-hero p {
+  font-size: 1.1rem;
+}
+
+.btn {
+  text-decoration: none;
+  width: fit-content;
+  padding: 11px 50px;
+  font-size: 1.3rem;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid var(--btn-color);
+  background-color: var(--btn-color);
+  transition: 0.5s;
+}
+.btn:hover {
+  transform: translateY(15px);
+}
+
+@media screen and (max-width: 950px) {
+  .home-hero h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .home-hero p {
+    font-size: 1rem;
+  }
+
+  .home .home-hero {
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .btn {
+    padding: 8px 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home .home-hero {
+    width: 90%;
+    padding-right: 10px;
+  }
+  .home-hero h1 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+
+  .home-hero p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .home .home-hero {
+    padding-right: 0;
+    gap: 15px;
+  }
+  .home-hero h1 {
+    font-size: 1.4rem;
+  }
+
+  .home-hero p {
+    font-size: 0.9rem;
+  }
+  .btn {
+    padding: 7px 15px;
+  }
+}

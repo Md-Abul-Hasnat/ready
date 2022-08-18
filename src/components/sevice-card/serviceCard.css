@@ -1,0 +1,77 @@
+.services-card {
+  width: fit-content;
+  height: fit-content;
+  padding: 45px 20px;
+  background-color: #f7f7f7;
+  transition: 0.5s;
+}
+
+.services-card:hover {
+  box-shadow: 0px 0px 15px gray;
+  cursor: default;
+}
+
+.services-card:hover .icon > i {
+  color: var(--btn-color);
+}
+
+.icon > i {
+  font-size: 2.5rem;
+  color: gray;
+  margin-bottom: 15px;
+  transition: 0.5s;
+}
+
+.services-card h2 {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.services-card .service-text {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: gray;
+}
+
+.services-card .service-btn {
+  padding: 10px 25px;
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  background-color: var(--btn-color);
+}
+
+@media screen and (max-width: 1240px) {
+  .services-card h2 {
+    font-size: 1.1rem;
+  }
+  .services-card .service-text {
+    font-size: 0.9rem;
+  }
+  .services-card .service-btn {
+    padding: 8px 20px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .services-card {
+    padding: 35px 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .services-card h2 {
+    font-size: 1.3rem;
+  }
+  .services-card .service-text {
+    font-size: 1rem;
+  }
+  .services-card .service-btn {
+    padding: 10px 25px;
+  }
+
+  .services-card:hover {
+    box-shadow: none;
+  }
+}

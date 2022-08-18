@@ -1,0 +1,112 @@
+.navbar {
+  width: 100%;
+  background-color: transparent;
+  height: 15%;
+  position: relative;
+}
+.navbar-main {
+  height: 100%;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-main .nav-links {
+  display: flex;
+  gap: 30px;
+  position: relative;
+}
+
+.nav-links li {
+  margin-left: 20px;
+  list-style-type: none;
+}
+
+.nav-links li .nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.nav-links li .nav-link:hover {
+  color: var(--btn-color);
+}
+
+.fa-bars {
+  display: none;
+  color: white;
+}
+.fa-xmark {
+  display: none;
+  color: white;
+}
+@media screen and (max-width: 800px) {
+  .nav-links li .nav-link {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .nav-links li .nav-link {
+    font-size: 1.2rem;
+  }
+  .fa-solid {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar {
+    background-color: #333;
+  }
+
+  .navbar-main .nav-links {
+    width: 50%;
+    height: 100vh;
+    font-size: 2.5rem;
+    background-color: #333;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+    padding-top: 40px;
+    position: absolute;
+    top: -100vh;
+    right: 0;
+    transition: 0.9s ease;
+  }
+
+  .nav-links.active {
+    top: 0;
+  }
+
+  .fa-bars {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  .fa-xmark {
+    font-size: 1.8rem;
+    position: absolute;
+    top: 38px;
+    right: 19%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .nav-links li .nav-link {
+    font-size: 1rem;
+  }
+  .logo img {
+    width: 90px;
+  }
+  .fa-bars {
+    font-size: 1.3rem;
+  }
+  .fa-xmark {
+    font-size: 1.5rem;
+    right: 20%;
+  }
+}

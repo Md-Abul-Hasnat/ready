@@ -1,0 +1,58 @@
+.latest-work {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  margin-top: 120px;
+}
+.latest-work h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+.latest-work p {
+  color: gray;
+  margin-bottom: 70px;
+}
+
+.latest-work .swiper {
+  width: 95%;
+  height: 70vh;
+}
+
+.swiper .slide {
+  width: 100%;
+  height: 100%;
+}
+.swiper .slide img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 850px) {
+  .latest-work h1 {
+    font-size: 2.5rem;
+  }
+  .latest-work p {
+    padding: 0 20px;
+    font-size: 0.9rem;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .latest-work h1 {
+    font-size: 2rem;
+  }
+  .latest-work p {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .latest-work h1 {
+    font-size: 1.3rem;
+  }
+  .latest-work p {
+    font-size: 0.8rem;
+    margin-bottom: 50px;
+  }
+}
