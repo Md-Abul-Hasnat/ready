@@ -7,6 +7,7 @@
 .latest-work h1 {
   font-size: 3rem;
   margin-bottom: 40px;
+  color: var(--h1-color);
 }
 .latest-work p {
   color: gray;
@@ -38,21 +39,20 @@
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 550px) {
   .latest-work h1 {
     font-size: 2rem;
-  }
-  .latest-work p {
-    margin-bottom: 50px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .latest-work h1 {
-    font-size: 1.3rem;
-  }
   .latest-work p {
     font-size: 0.8rem;
     margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .latest-work h1 {
+    font-size: 1.5rem;
   }
 }

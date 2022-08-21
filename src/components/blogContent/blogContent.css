@@ -1,0 +1,123 @@
+.blog-content {
+  width: 100%;
+  height: fit-content;
+  margin: 100px 0;
+}
+
+.blog-content .blog-content-main {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 25px;
+}
+
+.blog-content-main .blog-content-left {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 60px;
+}
+
+.blog-content-main .blog-content-right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  padding-left: 40px;
+}
+
+.blog-content-right h1 {
+  font-size: 1.7rem;
+  color: var(--h1-color);
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+
+.blog-content-right p {
+  color: gray;
+  font-size: 18px;
+}
+
+.blog-content-right .blog-right-main .blog-text {
+  padding: 12px 0;
+}
+
+.blog-text small {
+  color: gray;
+}
+
+.blog-right-main .blog-text p {
+  margin-bottom: 5px;
+}
+
+.blog-right-service-main .service-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: gray;
+  padding: 10px 0;
+}
+
+.blog-right-widget-main > p {
+  font-size: 1.3rem;
+  margin-bottom: -5px;
+  line-height: 1.6;
+}
+.blog-right-widget-main small {
+  color: gray;
+  font-size: 1rem;
+}
+
+.blog-right-search input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 3px solid rgb(161, 159, 159);
+  outline: none;
+}
+
+.blog-right-search input[type="submit"] {
+  padding: 14.5px;
+  background-color: var(--btn-color);
+  color: white;
+  border: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .blog-content-main .blog-content-left {
+    row-gap: 90px;
+  }
+  .blog-content-right h1 {
+    font-size: 1.5rem;
+  }
+  .blog-content-main .blog-content-right {
+    padding-left: 0px;
+  }
+  .blog-content .blog-content-main {
+    grid-template-columns: 60% 40%;
+    gap: 35px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .blog-content-main .blog-content-left {
+    row-gap: 70px;
+  }
+  .blog-content-right h1 {
+    font-size: 1.7rem;
+  }
+
+  .blog-content .blog-content-main {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .blog-content-right h1 {
+    font-size: 1.5rem;
+  }
+  .blog-right-widget-main > p {
+    font-size: 1.1rem;
+  }
+}

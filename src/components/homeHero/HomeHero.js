@@ -2,12 +2,23 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../navbar/Navbar";
 import "./homeHero.css";
+import { motion } from "framer-motion";
 
 const HomeHero = () => {
+  const transition = {
+    duration: 2,
+    type: "spring",
+  };
+
   return (
-    <section className="home" id="homeHero">
+    <section className="home" id="hero">
       <Navbar />
-      <div className="home-hero">
+      <motion.div
+        initial={{ y: "10%" }}
+        whileInView={{ y: "0%" }}
+        transition={transition}
+        className="home-hero"
+      >
         <h1>
           <span>Ready</span> The Best Corporate <br /> Business Template
         </h1>
@@ -20,7 +31,7 @@ const HomeHero = () => {
         <Link className="btn" to="/">
           Purchase
         </Link>
-      </div>
+      </motion.div>
     </section>
   );
 };

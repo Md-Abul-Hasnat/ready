@@ -20,22 +20,22 @@ const Navbar = () => {
         <ul className={click ? "nav-links active" : "nav-links"}>
           <li>
             <NavLink className="nav-link" to="/">
-              Home
+              HOME
             </NavLink>
           </li>
           <li>
-            <NavLink className="nav-link" to="/">
-              About
+            <NavLink className="nav-link" to="/about">
+              ABOUT
             </NavLink>
           </li>
           <li>
-            <NavLink className="nav-link" to="/">
-              Services
+            <NavLink className="nav-link" to="/blog">
+              BLOGS
             </NavLink>
           </li>
           <li>
-            <NavLink className="nav-link" to="/">
-              Contact
+            <NavLink className="nav-link" to="/contact">
+              CONTACT
             </NavLink>
           </li>
           <i onClick={handleClick} class="fa-solid fa-xmark"></i>

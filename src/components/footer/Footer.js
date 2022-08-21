@@ -1,12 +1,22 @@
 import React from "react";
 import { Link } from "react-scroll";
-import HomeHero from "../homeHero/HomeHero";
 import "./footer.css";
+import { motion } from "framer-motion";
 
 const Footer = () => {
+  const transition = {
+    duration: 2,
+    type: "spring",
+  };
+
   return (
     <section className="footer">
-      <div className="footer-main">
+      <motion.div
+        initial={{ y: "10%" }}
+        whileInView={{ y: "0%" }}
+        transition={transition}
+        className="footer-main"
+      >
         <div className="footer-left">
           <h4>About Us</h4>
           <p>
@@ -46,10 +56,10 @@ const Footer = () => {
             <i class="fa-brands fa-linkedin-in"></i>
           </div>
         </div>
-      </div>
+      </motion.div>
       <div className="copyright">
         <small>© Copyright 2022 Ready All rights reserved.</small>
-        <Link spy={true} to="homeHero" smooth={true}>
+        <Link spy={true} to="hero" smooth={true}>
           <i class="fa-solid fa-arrow-up"></i>
         </Link>
       </div>

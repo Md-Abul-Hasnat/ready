@@ -8,6 +8,7 @@
 .price > h1 {
   font-size: 2.8rem;
   margin-bottom: 20px;
+  color: var(--h1-color);
 }
 .price > p {
   padding: 0 200px;

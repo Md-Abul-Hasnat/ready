@@ -1,0 +1,37 @@
+.contact-hero {
+  height: 65vh;
+  width: 100%;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0)
+    ),
+    url("../../img/contact-bg.jpg");
+  background-position: top;
+  background-size: cover;
+}
+
+.contact-hero .title {
+  width: 100%;
+  height: calc(65vh - 15vh);
+  display: grid;
+  place-items: center;
+}
+
+.contact-hero .title > h1 {
+  color: white;
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 550px) {
+  .contact-hero .title > h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contact-hero .title > h1 {
+    font-size: 2.5rem;
+  }
+}

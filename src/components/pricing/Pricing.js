@@ -1,53 +1,22 @@
 import React from "react";
 import PriceCard from "../Price-card/PriceCard";
 import "./pricing.css";
+import { motion } from "framer-motion";
+import { pricing } from "../data";
 
 const Pricing = () => {
-  const pricing = [
-    {
-      price: 250,
-      duration: "PER MONTH",
-      cetagory: "Ultimate",
-      project: "15 Projects",
-      storage: "30GB Storage",
-      dataTransfer: "Unlimited data transfer",
-      bandwith: "50GB Bandwith",
-      security: "Enhanced security",
-    },
-    {
-      price: 500,
-      duration: "PER MONTH",
-      cetagory: "Standard",
-      project: "15 Projects",
-      storage: "30GB Storage",
-      dataTransfer: "Unlimited data transfer",
-      bandwith: "50GB Bandwith",
-      security: "Enhanced security",
-    },
-    {
-      price: 800,
-      duration: "PER MONTH",
-      cetagory: "Business",
-      project: "15 Projects",
-      storage: "30GB Storage",
-      dataTransfer: "Unlimited data transfer",
-      bandwith: "50GB Bandwith",
-      security: "Enhanced security",
-    },
-    {
-      price: 999,
-      duration: "PER MONTH",
-      cetagory: "Primium",
-      project: "15 Projects",
-      storage: "30GB Storage",
-      dataTransfer: "Unlimited data transfer",
-      bandwith: "50GB Bandwith",
-      security: "Enhanced security",
-    },
-  ];
+  const transition = {
+    duration: 2,
+    type: "spring",
+  };
 
   return (
-    <section className="price">
+    <motion.section
+      initial={{ y: "15%" }}
+      whileInView={{ y: "0%" }}
+      transition={transition}
+      className="price"
+    >
       <h1>OUR PRICING TABLES</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium et
@@ -59,7 +28,7 @@ const Pricing = () => {
           <PriceCard data={price} />
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

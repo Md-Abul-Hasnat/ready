@@ -1,0 +1,96 @@
+.story {
+  width: 100%;
+  height: fit-content;
+  margin: 120px 0;
+  text-align: center;
+}
+.story h1 {
+  font-size: 2.8rem;
+  color: var(--h1-color);
+  margin-bottom: 20px;
+}
+
+.story > p {
+  padding: 0 150px;
+  line-height: 1.6;
+  color: gray;
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+}
+
+.story .story-main {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+}
+
+.story-main .story-left img {
+  width: 100%;
+}
+
+.story-main .story-right {
+  width: 100%;
+}
+
+.story-right > h3 {
+  margin: 20px 0 10px;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.story-right > p {
+  color: gray;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 1300px) {
+  .story-right > p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .story-right > h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .story .story-main {
+    grid-template-columns: 1fr;
+    row-gap: 35px;
+  }
+  .story > p {
+    padding: 0 100px;
+    line-height: 1.5;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .story h1 {
+    font-size: 2.2rem;
+  }
+
+  .story > p {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .story h1 {
+    font-size: 1.8rem;
+  }
+
+  .story > p {
+    font-size: 0.9rem;
+    padding: 0 30px;
+  }
+}

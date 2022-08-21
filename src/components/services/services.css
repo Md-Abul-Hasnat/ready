@@ -1,11 +1,12 @@
 .services {
   width: 85%;
-  margin: 100px auto 0;
+  margin: 120px auto 0;
   text-align: center;
 }
 
 .services h1 {
   font-size: 3rem;
+  color: var(--h1-color);
   margin-bottom: 20px;
 }
 .services p {

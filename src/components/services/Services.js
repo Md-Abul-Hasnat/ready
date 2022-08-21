@@ -1,33 +1,22 @@
 import React from "react";
 import ServicesCard from "../sevice-card/ServicesCard";
 import "./services.css";
+import { motion } from "framer-motion";
+import { serviceData } from "../data";
 
 const Services = () => {
-  const serviceData = [
-    {
-      icon: "fa-solid fa-desktop",
-      title: "Web Design",
-      text: "Analytics release series A financing launch party interaction design android angel investor.",
-    },
-    {
-      icon: "fa-solid fa-map",
-      title: "UX Design",
-      text: "Analytics release series A financing launch party interaction design android angel investor.",
-    },
-    {
-      icon: "fa-solid fa-image",
-      title: "Photography",
-      text: "Analytics release series A financing launch party interaction design android angel investor.",
-    },
-    {
-      icon: "fa-solid fa-mobile-screen-button",
-      title: "App Development",
-      text: "Analytics release series A financing launch party interaction design android angel investor.",
-    },
-  ];
+  const transition = {
+    duration: 2,
+    type: "spring",
+  };
 
   return (
-    <div className="services">
+    <motion.div
+      initial={{ y: "15%" }}
+      whileInView={{ y: "0%" }}
+      transition={transition}
+      className="services"
+    >
       <h1>OUR SERVICES</h1>
       <p>
         Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy
@@ -39,7 +28,7 @@ const Services = () => {
           <ServicesCard data={service} />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

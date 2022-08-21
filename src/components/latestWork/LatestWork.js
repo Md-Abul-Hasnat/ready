@@ -10,10 +10,21 @@ import project2 from "../../img/project2.jpg";
 import project3 from "../../img/project3.png";
 import project4 from "../../img/project4.jpg";
 import project5 from "../../img/project5.jpg";
+import { motion } from "framer-motion";
 
 const LatestWork = () => {
+  const transition = {
+    duration: 2,
+    type: "spring",
+  };
+
   return (
-    <section className="latest-work">
+    <motion.section
+      initial={{ y: "15%" }}
+      whileInView={{ y: "0%" }}
+      transition={transition}
+      className="latest-work"
+    >
       <h1>OUR LATEST WORK</h1>
       <p>
         Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy
@@ -55,7 +66,7 @@ const LatestWork = () => {
           <img src={project5} alt="project5" />
         </SwiperSlide>
       </Swiper>
-    </section>
+    </motion.section>
   );
 };
 export default LatestWork;

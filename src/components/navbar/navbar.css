@@ -1,7 +1,7 @@
 .navbar {
   width: 100%;
   background-color: transparent;
-  height: 15%;
+  height: 15vh;
   position: relative;
 }
 .navbar-main {
@@ -27,13 +27,16 @@
 .nav-links li .nav-link {
   text-decoration: none;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
   transition: 0.5s;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
 }
 
 .nav-links li .nav-link:hover {
   color: var(--btn-color);
+  border-color: var(--btn-color);
 }
 
 .fa-bars {
@@ -52,7 +55,8 @@
 
 @media screen and (max-width: 650px) {
   .nav-links li .nav-link {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    border-bottom: none;
   }
   .fa-solid {
     display: block;
@@ -77,6 +81,7 @@
     top: -100vh;
     right: 0;
     transition: 0.9s ease;
+    z-index: 99;
   }
 
   .nav-links.active {
@@ -107,6 +112,10 @@
   }
   .fa-xmark {
     font-size: 1.5rem;
-    right: 20%;
+    right: 11%;
+    top: 25px;
+  }
+  .navbar-main .nav-links {
+    width: 100%;
   }
 }

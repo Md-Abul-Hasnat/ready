@@ -1,9 +1,20 @@
 import React from "react";
 import "./stats.css";
+import { motion } from "framer-motion";
 
 const Stats = () => {
+  const transition = {
+    duration: 2,
+    type: "spring",
+  };
+
   return (
-    <section className="stats">
+    <motion.section
+      initial={{ y: "15%" }}
+      whileInView={{ y: "0%" }}
+      transition={transition}
+      className="stats"
+    >
       <div className="stats-main">
         <article>
           <i class="fa-solid fa-trophy"></i>
@@ -29,7 +40,7 @@ const Stats = () => {
           <p>Cup of Coffee</p>
         </article>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

@@ -8,6 +8,7 @@
 .why-choose-us h1 {
   font-size: 2.8rem;
   margin-bottom: 25px;
+  color: var(--h1-color);
 }
 .why-choose-us > p {
   padding: 0 250px;

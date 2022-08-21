@@ -2,10 +2,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./whyChooseUs.css";
 import video from "../../img/why-choose-us.mp4";
+import { motion } from "framer-motion";
 
 const WhyChooseUs = () => {
+  const transition = {
+    duration: 2,
+    type: "spring",
+  };
+
   return (
-    <section className="why-choose-us">
+    <motion.section
+      initial={{ y: "15%" }}
+      whileInView={{ y: "0%" }}
+      transition={transition}
+      className="why-choose-us"
+    >
       <h1>WHY CHOOSE US </h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ut
@@ -35,7 +46,7 @@ const WhyChooseUs = () => {
           <video controls="controls" autoplay="true" src={video} />
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
