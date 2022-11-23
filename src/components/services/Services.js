@@ -24,8 +24,8 @@ const Services = () => {
         volutpat.
       </p>
       <div className="services-main">
-        {serviceData.map((service) => (
-          <ServicesCard data={service} />
+        {serviceData.map((service, index) => (
+          <ServicesCard key={index} data={service} />
         ))}
       </div>
     </motion.div>

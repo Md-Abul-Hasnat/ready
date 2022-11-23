@@ -49,7 +49,6 @@ const AboutInfo = () => {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab,
               fugit officiis aliquid illo a soluta!
             </h3>
-            <a href="/">View More</a>
           </div>
         </div>
         <div className="about-info-main-right">

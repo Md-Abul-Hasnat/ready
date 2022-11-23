@@ -38,12 +38,12 @@ const WhyChooseUs = () => {
             nonummy nibh euismod tincidunt ut laoree Dolore magna aliquam erat
             volutpat.
           </p>
-          <Link className="wcu-btn" to="/">
+          <Link className="wcu-btn" to="/about">
             Learn more
           </Link>
         </div>
         <div className="why-choose-us-right">
-          <video controls="controls" autoplay="true" src={video} />
+          <video controls="controls" src={video} />
         </div>
       </div>
     </motion.section>

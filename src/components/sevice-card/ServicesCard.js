@@ -13,9 +13,9 @@ const ServicesCard = (props) => {
       <h2> {title} </h2>
       <p className="service-text">{text}</p>
       <br />
-      <a className=" service-btn" href="/">
+      <Link className="service-btn" to="/about">
         Learn More
-      </a>
+      </Link>
     </section>
   );
 };

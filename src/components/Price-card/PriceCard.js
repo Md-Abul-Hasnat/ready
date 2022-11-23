@@ -25,7 +25,7 @@ const PriceCard = (props) => {
       <p> {dataTransfer} </p>
       <p> {bandwith} </p>
       <p> {security} </p> <br />
-      <Link className="price-btn" to="/">
+      <Link className="price-btn" to="/contact">
         Get Started
       </Link>
     </section>

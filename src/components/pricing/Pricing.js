@@ -24,8 +24,8 @@ const Pricing = () => {
         officia alias harum libero.
       </p>
       <div className="price-main">
-        {pricing.map((price) => (
-          <PriceCard data={price} />
+        {pricing.map((price, index) => (
+          <PriceCard key={index} data={price} />
         ))}
       </div>
     </motion.section>
