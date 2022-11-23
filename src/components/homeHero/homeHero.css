@@ -50,7 +50,7 @@
   transition: 0.5s;
 }
 .btn:hover {
-  transform: translateY(15px);
+  transform: translateY(-10px);
 }
 
 @media screen and (max-width: 950px) {
